@@ -104,5 +104,6 @@ BPDUs to the MiddleSwitch.
 
 ## EXPLANATION
 - The message states that both interfaces went up after configuring the filter on the MiddleSwitch. Why is that?
-- <mark>Well I realized that the BPDU Filter will always take priority first over the BPDU Guard. Since the TopSwitch is sending BPDUs to the MiddleSwitch and the MiddleSwitch only has the BPDU Filter command, it will automatically drop those BPDUs. The MiddleSwitch will not bother to listen to any BPDUs since it is not sending any, making both interfaces to go up like normal.<mark>
+- <mark>Well I realized that the BPDU Filter will always take priority first over the BPDU Guard. Since the TopSwitch is sending BPDUs to the MiddleSwitch and the MiddleSwitch only has the BPDU Filter command, it will automatically drop those BPDUs.<mark>
+- <mark>The MiddleSwitch will not bother to listen to any BPDUs since it is not sending any, making both interfaces to go up like normal.<mark>
 - When you look at the "I went ahead and disabled the filter on the MiddleSwitch" picture, the interface went on `err-disable`!
