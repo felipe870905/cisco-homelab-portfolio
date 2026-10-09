@@ -30,8 +30,27 @@ on a port that is configured as a trunk port, dynamic desirable, or dynamic auto
 
 ## Checking the MAC address of the USB-C adapter (THIS IS IMPORTANT)
 <img width="896" height="587" alt="mac address of adapter" src="https://github.com/user-attachments/assets/3508f0bb-88ef-458a-b24d-731a509ba73b" />
+
+
+
+## Configuring Port-Security on `int f0/2`
 <img width="893" height="514" alt="using the mac address command " src="https://github.com/user-attachments/assets/80260d1e-9cc8-4704-99be-a563e80f6f4b" />
 
 - I used this command in order to manually configure this MAC address to save in the MAC address table. I thought that my port was
   going to go in the `err-disabled` state once a different MAC address from another device passes through `int f0/2`. 
 
+<img width="900" height="509" alt="maximum of 1" src="https://github.com/user-attachments/assets/809d59d7-d905-4cbd-b0db-9dc9932ed6e8"/>
+
+- Configured a maximum of 1 Mac address allowed for this port, which should be the adapter's MAC address.
+
+## Testing Port-Security 
+<img width="899" height="510" alt="unplug cable to connect to mac" src="https://github.com/user-attachments/assets/c366104a-6f13-46ce-978e-35af03bcb576" />
+<img width="896" height="512" alt="show mac address table " src="https://github.com/user-attachments/assets/dba5ff3f-ec57-4699-ad2b-c154457f75f6" />
+
+- I plugged the Ethernet cord into the port and into my Mac, in which it successfully read the MAC address of the adapter.
+
+<img width="894" height="513" alt="adapter to iphone connected" src="https://github.com/user-attachments/assets/5bd05898-7914-435f-9c18-8b63181db0c3" />
+
+- I proceeded to connect the Ethernet cord onto my iPhone in which I generated the same MAC address once more. <mark>In my head,
+  I believed that the adapter was just something that allowed a device to connect via an Ethernet cord while the device itself used
+  it's own NIC card for it.<mark>
