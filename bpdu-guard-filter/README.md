@@ -9,6 +9,9 @@ Guard testing turned into a deeper investigation of how these two features
 actually behave together.
 
 ## Environment
+<img width="796" height="332" alt="logical topology" src="https://github.com/user-attachments/assets/4b3990c0-1207-4d2b-b050-fc92963f28df" />
+
+
 - <mark>**TopSwitch** and **MiddleSwitch**, connected via `int f0/1` on each switch<mark>
 - PortFast disabled on Fa0/1 for this test (normally used on end-device 
   access ports to skip the 30-second STP listening/learning delay)
