@@ -7,6 +7,8 @@ I later found out a problem that generated one MAC address only.
 
 
 ## Environment 
+<img width="796" height="332" alt="logical topology" src="https://github.com/user-attachments/assets/03b702ae-200b-42c4-ba0f-8120068f5cbd" />
+
 - TopSwitch, `int f0/2` and `int f0/13`
 - Devices I tested: MacBook Pro, iPhone 16 Pro, and a Windows laptop *(this windows laptop has its own Ethernet port and an adapter was not used)*
 - USB-C to Ethernet adapter (which was used to connect the MacBook and iPhone into a switch port.)
@@ -54,3 +56,9 @@ on a port that is configured as a trunk port, dynamic desirable, or dynamic auto
 - I proceeded to connect the Ethernet cord onto my iPhone in which I generated the same MAC address once more. <mark>In my head,
   I believed that the adapter was just something that allowed a device to connect via an Ethernet cord while the device itself used
   it's own NIC card for it.<mark>
+
+
+<img width="839" height="512" alt="clear mac address table " src="https://github.com/user-attachments/assets/dd87bf82-0a04-4df0-adc5-98451a04fb02" />
+
+- I went ahead and cleared the MAC address table in order to test out my MacBook once more, thinking that the address might've
+  been burned in somehow.
