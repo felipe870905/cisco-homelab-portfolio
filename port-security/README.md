@@ -62,3 +62,11 @@ on a port that is configured as a trunk port, dynamic desirable, or dynamic auto
 
 - I went ahead and cleared the MAC address table in order to test out my MacBook once more, thinking that the address might've
   been burned in somehow.
+
+
+<img width="850" height="518" alt="same mac again" src="https://github.com/user-attachments/assets/f42cee97-d847-442c-b07c-28506252127a" />
+
+- Generated the same MAC address once more.
+
+## The Realization
+
