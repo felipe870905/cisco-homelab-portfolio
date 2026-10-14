@@ -30,7 +30,7 @@ on a port that is configured as a trunk port, dynamic desirable, or dynamic auto
 
 - You can see now that the command was accepted after I changed it to an access port. 
 
-## Checking the MAC address of the USB-C adapter (THIS IS IMPORTANT)
+## Checking the MAC address of the USB-C adapter <mark>(THIS IS IMPORTANT)<mark>
 <img width="896" height="587" alt="mac address of adapter" src="https://github.com/user-attachments/assets/3508f0bb-88ef-458a-b24d-731a509ba73b" />
 
 
@@ -69,4 +69,17 @@ on a port that is configured as a trunk port, dynamic desirable, or dynamic auto
 - Generated the same MAC address once more.
 
 ## The Realization
+If you go back and look at the MAC address that I posted on the "THIS IS IMPORTANT" section, you can see the USB-C to Ethernet MAC address, which is 6c:6e:07:16:6f:ee. 
+- *(Cisco IOS displays MAC addresses in dotted format (xxxx.xxxx.xxxx), while macOS uses colons. These are the same address, so the adapter’s MAC matches the one secured on the switch port.)*
 
+Each device nowadays have Wi-Fi chips that have their own MAC address. Back then, you can use an Ethernet cable to physically 
+connect it to your own device (as you can see in the picture below.) 
+
+<img width="200" height="200" alt="ethernet" src="https://github.com/user-attachments/assets/7fe4ada4-316f-41f7-a02d-1f88a65795f8" />
+
+That means that your physical Ethernet port has its own Mac address, your Wi-Fi chip has it's own, and most importantly the 
+<mark>USB-C to Ethernet adapter has it's own MAC address!<mark> 
+
+No matter how many devices I use, I used the same adapter which means the same Mac address will be generated on the Cisco switch. 
+
+## Triggering the `err-disable` feature 
