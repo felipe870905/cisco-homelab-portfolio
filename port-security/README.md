@@ -31,6 +31,9 @@ on a port that is configured as a trunk port, dynamic desirable, or dynamic auto
 - You can see now that the command was accepted after I changed it to an access port. 
 
 ## Checking the MAC address of the USB-C adapter <mark>(THIS IS IMPORTANT)<mark>
+
+<img width="896" height="587" alt="amazon adpater" src="https://github.com/user-attachments/assets/1ab03fcd-ba86-419d-b8ef-198e4d3b8093" />
+
 <img width="896" height="587" alt="mac address of adapter" src="https://github.com/user-attachments/assets/3508f0bb-88ef-458a-b24d-731a509ba73b" />
 
 
@@ -82,4 +85,26 @@ That means that your physical Ethernet port has its own Mac address, your Wi-Fi 
 
 No matter how many devices I use, I used the same adapter which means the same Mac address will be generated on the Cisco switch. 
 
-## Triggering the `err-disable` feature 
+## Triggering the `err-disable` feature on a NEW INTERFACE!
+I decided do this lab on `int f0/13` instead of `int f0/2`, just to confirm there wasn't a misconfiguration. 
+
+<img width="854" height="513" alt="sticky" src="https://github.com/user-attachments/assets/b2f34f58-d72f-4958-8986-a3cc26526795" />
+<img width="848" height="516" alt="sticky 2" src="https://github.com/user-attachments/assets/4dc70fe8-1d08-4287-adc7-eed1286b59f6" />
+<img width="849" height="513" alt="adding a new sticky" src="https://github.com/user-attachments/assets/5ef88391-4179-48ae-bdc5-3358a16476bb" />
+<img width="859" height="514" alt="max of 1" src="https://github.com/user-attachments/assets/62c34d4e-93bb-428a-9520-fc5fe967265b" />
+
+
+
+- I had to remove the sticky command and manually configure a new one (besides the adapter MAC) in order to trigger the `err-disable` feature. The port will not allow any other MAC besides the one I manually configured, in which I also had to put a maximum of 1 Mac-address for `int f0/13`.
+
+<img width="860" height="516" alt="psecure" src="https://github.com/user-attachments/assets/911ccfe0-4119-4ff2-bc58-c185e9a689f2" />
+
+- The psecure `err-disable` feature has been enabled.
+
+<img width="845" height="513" alt="checking the mac address table " src="https://github.com/user-attachments/assets/6eb6ca3b-0097-4821-92a9-5dacd20c6eb7" />
+
+- Checking that the MAC address table is empty.
+
+## A successful `err-disable` trigger and explanation!
+
+<img width="863" height="510" alt="a successful trigger" src="https://github.com/user-attachments/assets/df15c389-a0ea-4af7-bd77-74781552ba2e" />
