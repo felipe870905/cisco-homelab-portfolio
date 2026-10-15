@@ -108,3 +108,12 @@ I decided do this lab on `int f0/13` instead of `int f0/2`, just to confirm ther
 ## A successful `err-disable` trigger and explanation!
 
 <img width="863" height="510" alt="a successful trigger" src="https://github.com/user-attachments/assets/df15c389-a0ea-4af7-bd77-74781552ba2e" />
+
+A successful `err-disable` log message was displayed after the adapter's MAC address was read on the port! There will always be different MAC addresses on each and every NIC card that a device holds, in which I learned that an Ethernet adapter has one of its own.
+
+- Generally speaking, a MAC addresses consists of 6 bytes or 48 bits.
+- The first 3 bytes consists of the OUI, which a manufacturer assigns these globally to all of their devices (such as Apple, Dell, Cisco, etc).
+- The last 3 bytes consists the unique specific device ID, in which no other device should have the same. Technically I could buy another adapter since the last 3 bytes would be different. But am I going to waste $25 just to do that? Nah
+
+<img width="540" height="406" alt="mac" src="https://github.com/user-attachments/assets/9d606ed5-1bf2-48e9-9f6e-89b611731eb5" />
+
