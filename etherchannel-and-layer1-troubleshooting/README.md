@@ -68,10 +68,22 @@ I opened WireShark in hopes of receiving an IP address, but all I saw was that m
 
 ## A simple fix but a brainfart moment at the same time 
 
-I apologize for the bizarre title but as someone who wants to work in the Networking field, there are so many things going through your head as far as troubleshooting, but a good network technician always starts from the fundamentals and works its way up. 
+I apologize for the bizarre title but as someone who wants to work in the Networking field, there are so many things going through your head as far as troubleshooting, but a good network technician always starts from the fundamentals and works his/her way up. 
 
 <img width="600" height="600" alt="osi" src="https://github.com/user-attachments/assets/40b2e5fa-5ed3-47c8-8d70-24dc85c3d689" />
 
 <img width="1591" height="664" alt="logical topology 2" src="https://github.com/user-attachments/assets/b04aaf22-0fca-4932-aa65-1834a459d9db" />
+
+When I was going through the troubleshooting process, I skipped right ahead and started looking for any misconfigurations on my Layer 2 devices and also my router's DHCP pool (Layer 3 on the OSI model). I realized that I wasn't even connected to my router from my MiddleSwitch `int f0/24`. 
+
+## Explanation and Receiving an IP Address 
+<img width="903" height="509" alt="success wireshark" src="https://github.com/user-attachments/assets/deb9167d-9b49-4710-9bb1-cbfd350ce306" />
+
+<img width="866" height="507" alt="Screenshot 2026-10-21 at 2 56 25 PM" src="https://github.com/user-attachments/assets/9a1f0b1b-5b91-4f82-8b1d-c1b34bcd7ca2" />
+
+Troubleshooting in Networking will always have it's different process depending on the situation and problem that you are facing. Most importantly, you should always consider using the OSI model. You can save yourself minutes if not hours of troubleshooting if you are doing the process right. 
+
+What should take you 5 minutes by connecting a simple cable, should not take you 40 minutes if you jumped the gun and skipped ahead to Layers 2-7. I learned that the hard way...
+
 
 
