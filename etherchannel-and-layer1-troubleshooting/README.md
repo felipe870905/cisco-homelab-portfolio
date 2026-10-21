@@ -45,10 +45,33 @@ In order for an EtherChannel to bundle properly, you have to set each link that 
 
 In this case, I purposely did not allowed any VLANs (despite having the `trunk` command configured) to travel through Po2. 
 
+## Fixing the Problem by adding the `allowed vlan` command 
+
 <img width="845" height="512" alt="int f0:9 allow trunk" src="https://github.com/user-attachments/assets/526b718c-d5f9-4bfb-8cab-70c082c3047c" />
 
 <img width="853" height="508" alt="confirming command " src="https://github.com/user-attachments/assets/e9a5792b-45a2-41e9-bfe9-93a1d5711654" />
 
 The command I typed showed up when I ran `show run`.
+
+<img width="854" height="506" alt="it works!" src="https://github.com/user-attachments/assets/9faff766-ce4c-443a-b698-9abab0750791" />
+
+The problem was fixed and both Port Channels are working!
+
+## Checking if I can receive an IP address 
+<img width="847" height="511" alt="portfast on int f0:13 on top switch" src="https://github.com/user-attachments/assets/3c33b561-4895-47bf-aa33-fe4291a2a351" />
+
+I connected (from my MacBook) onto my TopSwitch's `int f0/13` and enabled PortFast in order to connect much faster. 
+
+<img width="905" height="508" alt="wireshark" src="https://github.com/user-attachments/assets/c4b65343-1db2-441e-a7a2-5b7194a9295e" />
+
+I opened WireShark in hopes of receiving an IP address, but all I saw was that my computer was just sending DHCP Discover messages for a good minute. 
+
+## A simple fix but a brainfart moment at the same time 
+
+I apologize for the bizarre title but as someone who wants to work in the Networking field, there are so many things going through your head as far as troubleshooting, but a good network technician always starts from the fundamentals and works its way up. 
+
+<img width="600" height="600" alt="osi" src="https://github.com/user-attachments/assets/40b2e5fa-5ed3-47c8-8d70-24dc85c3d689" />
+
+<img width="1591" height="664" alt="logical topology 2" src="https://github.com/user-attachments/assets/b04aaf22-0fca-4932-aa65-1834a459d9db" />
 
 
