@@ -6,6 +6,10 @@ EtherChannel bundles several physical links into one logical link in a Cisco swi
 ## Note to Audience 
 This post is not a walkthrough of what I did in order to create the EtherChannel but rather solving a bundling problem. 
 
+## Cisco Equipment 
+- 3x Cisco 2960 Switches
+- 1x Cisco 1921 Router
+
 ## Environment 
 <img width="1591" height="664" alt="logical topology 2" src="https://github.com/user-attachments/assets/b9a72494-a751-4894-b139-d2221ed1677c" /> 
 
