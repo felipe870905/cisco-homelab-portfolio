@@ -8,6 +8,10 @@ configured on the same interface. What started as routine PortFast/BPDU
 Guard testing turned into a deeper investigation of how these two features 
 actually behave together.
 
+## Cisco Equipment 
+- 3x Cisco Catalyst 2960 Switches
+- 1x Cisco 1921 Router 
+
 ## Environment
 <img width="796" height="332" alt="logical topology" src="https://github.com/user-attachments/assets/4b3990c0-1207-4d2b-b050-fc92963f28df" />
 
