@@ -5,6 +5,10 @@ Port Security limits which/how many MAC addresses are allowed per each port on a
 an attacker can connect to an open port and connect to the network. I configured port security on one port on my TopSwitch, in which
 I later found out a problem that generated one MAC address only. 
 
+## Cisco Equipment
+- 3x Cisco 2960 Switches
+- 1x Cisco 1921 Router 
+
 
 ## Environment 
 <img width="796" height="332" alt="logical topology" src="https://github.com/user-attachments/assets/03b702ae-200b-42c4-ba0f-8120068f5cbd" />
