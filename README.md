@@ -20,6 +20,44 @@ Every lab that I complete in this project is a review of a topic that I already 
 - WireShark for Packet Capture analysis (for some labs)
 
 
+## Subnetting Info 
+VLAN 10: VideoGameDevices
+- Network: `192.168.1.144/28` (mask 255.255.255.240)
+- Router gateway: `192.168.1.145`
+- Usable hosts: `.145` to `.158` (14 total)
+- Broadcast: `.159`
+
+VLAN 20: SecurityCameras
+- Network: `192.168.1.96/27` (mask 255.255.255.224)
+- Router gateway: `192.168.1.97`
+- Usable hosts: `.97` to `.126` (30 total)
+- Broadcast: `.127`
+
+VLAN 30: TVs
+- Network: `192.168.1.160/29` (mask 255.255.255.248)
+- Router gateway: `192.168.1.161`
+- Usable hosts: `.161` to `.166` (6 total)
+- Broadcast: `.167`
+
+VLAN 40: SmartBoards
+- Network: `192.168.1.64/27` (mask 255.255.255.224)
+- Router gateway: `192.168.1.65`
+- Usable hosts: `.65` to `.94` (30 total)
+- Broadcast: `.95`
+
+VLAN 50: VOIPhones
+- Network: `192.168.1.0/26` (mask 255.255.255.192)
+- Router gateway: `192.168.1.1`
+- Usable hosts: `.1` to `.62` (62 total)
+- Broadcast: `.63`
+
+VLAN 60: Printers & Scanners
+- Network: `192.168.1.128/28` (mask 255.255.255.240)
+- Router gateway: `192.168.1.129`
+- Usable hosts: `.129` to `.142` (14 total)
+- Broadcast: `.143`
+
+
 ## Technologies and Skills
 - Cisco IOS
 - VLANs and 802.1Q Trunking
@@ -40,3 +78,6 @@ Every lab that I complete in this project is a review of a topic that I already 
 
 ## TikTok Networking Page
 https://www.tiktok.com/@networkingwithcruz?is_from_webapp=1&sender_device=pc
+
+
+
