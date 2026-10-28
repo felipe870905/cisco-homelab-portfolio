@@ -11,6 +11,8 @@ Every lab that I complete in this project is a review of a topic that I already 
 
 
 ## What My Physical Lab Consists Of
+<img width="1591" height="664" alt="logical topology 2" src="https://github.com/user-attachments/assets/cfba9f9d-a83b-4e4f-84c4-df9364238301" />
+
 - 3x Cisco Catalyst 2960 Switches (Top Switch, Middle Switch, and Bottom Switch)
 - 1x Cisco 1921 ISR Router (router-on-a-stick, DHCP server)
 - 6 VLANs on a custom made VLSM scheme using `192.168.1.0/24` IP address range
