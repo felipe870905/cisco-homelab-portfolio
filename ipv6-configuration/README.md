@@ -67,7 +67,18 @@ IPv4 uses 32-bit addresses which allows about 4.3 billion address combinations i
 
 
 ## Lab Walkthrough 
+<img width="736" height="465" alt="Screenshot 2026-11-11 at 2 28 44 PM" src="https://github.com/user-attachments/assets/2f269930-a634-44bf-8152-f7f0602c8011" />
 
+This is the IPv6 address format that I used in my lab (as you can see on the IPv6 Addressing Scheme table). 
 
+<img width="853" height="511" alt="int g0:0 mac address" src="https://github.com/user-attachments/assets/9ded0033-703a-4687-a083-ef8bb539f401" />
 
+`int g0/0` Mac-Address 
 
+<img width="816" height="506" alt="Screenshot 2026-11-11 at 2 33 28 PM" src="https://github.com/user-attachments/assets/0c6622a3-232b-4e0f-be30-663de694a7f8" />
+
+This is how I wrote the scheme and as well as calculating the EUI-64 MAC address for VLAN 60. The reason why I used `int g0/0` is because that is where the stick is created, which sends out all the traffic through each sub-interface. Sub-interfaces do not have Mac-Addresses, only PHYSICAL interfaces do. 
+
+<img width="866" height="509" alt="eui-64 command for vlan60" src="https://github.com/user-attachments/assets/9fcf979d-9db0-4f49-8d1a-53ac217e56e7" />
+
+Using the EUI-64 command. 
