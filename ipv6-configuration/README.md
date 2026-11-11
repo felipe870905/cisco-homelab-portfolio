@@ -49,7 +49,24 @@ Each VLAN gets its own /64. The 16-bit subnet ID matches the VLAN number.
 
 `int g0/0` Mac-Address with EUI-64 is `6612.25ff.fecf.9fc0`
 
+## Key Concepts
 
+- Link-local (FE80::/10): automatically created on every IPv6 interface. Used only on the local link, never routed. NDP messages use it.
+- Global unicast (2000::/3): the routable address, built from the prefix plus an interface ID.
+- SLAAC: the router advertises the prefix, and the host builds its own address. No server and no lease table.
+- RS / RA: a host asks "any routers here?" (Router Solicitation), and the router answers with the prefix and gateway info (Router Advertisement).
+- DAD: Duplicate Address Detection, where a device checks that nobody is already using an address.
+- EUI-64: builds the 64-bit interface ID from the MAC address (split the MAC, insert FFFE, flip the 7th bit).
+
+
+## The Problem?
+I didn't necessarily encounter any problems while configuring IPv6 in my homelab, but rather learned a few new things and saw it happen in real time in my equipment. 
+
+## Why IPv6?
+IPv4 uses 32-bit addresses which allows about 4.3 billion address combinations in total. Nowadays, there are a lot of new devices being created everyday (such as IoT devices) in which take up more IPv4 addresses that was originally intended to when IPv4 was first created. IPv6 uses a 128-bit address scheme in which allows about 340 undecillion addresses to be created. 
+
+
+## Lab Walkthrough 
 
 
 
