@@ -82,3 +82,22 @@ This is how I wrote the scheme and as well as calculating the EUI-64 MAC address
 <img width="866" height="509" alt="eui-64 command for vlan60" src="https://github.com/user-attachments/assets/9fcf979d-9db0-4f49-8d1a-53ac217e56e7" />
 
 Using the EUI-64 command. 
+
+<img width="856" height="511" alt="eui-64 confirmed" src="https://github.com/user-attachments/assets/eb56ddfd-648d-4b93-acf7-a9103a96bd76" />
+
+As you can see, the EUI-64 matches the one I calculated on my paper for sub-interface `0/0.60`. 
+
+<img width="857" height="509" alt="ipv6 unicast-routing command" src="https://github.com/user-attachments/assets/4896980b-1742-4390-9a9d-cf34ce92ca9a" />
+
+I realized that you can use the IPv6 configuration commands in order to set each address on each sub-interface, but routing will not be possible between VLANs, nor my MacBook will receive the network prefix since no Router Advertisements (RAs) would be sent. 
+
+
+## Obtaining an IPv6 Address for my MacBook using VLAN 40
+<img width="848" height="508" alt="checking middle switch int f0:13" src="https://github.com/user-attachments/assets/383a948f-2ad9-47ba-9dfd-a748f517f048" />
+
+Checking to see that I connected successfully on my MiddleSwitch's `int f0/13` which falls under VLAN 40. 
+
+
+<img width="897" height="508" alt="chceking the ipv6 config on my mac" src="https://github.com/user-attachments/assets/0761eb59-b155-4f43-be4f-02d7f71424f3" />
+
+As you can see, my MacBook has obtained the link-local address from the router and has also generated two IPv6 addresses. 
