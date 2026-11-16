@@ -100,4 +100,18 @@ Checking to see that I connected successfully on my MiddleSwitch's `int f0/13` w
 
 <img width="897" height="508" alt="chceking the ipv6 config on my mac" src="https://github.com/user-attachments/assets/0761eb59-b155-4f43-be4f-02d7f71424f3" />
 
-As you can see, my MacBook has obtained the link-local address from the router and has also generated two IPv6 addresses. 
+<img width="858" height="507" alt="checking the link local address " src="https://github.com/user-attachments/assets/89deecad-df45-4b96-87fc-19895b706b98" />
+
+
+As you can see, my MacBook has obtained the link-local address from the router and has also generated two IPv6 addresses (macOS makes a stable one that stays on this network, and a temporary one that changes over time). All link-local addresses are the same since it uses the physical interface of `g0/0`. 
+
+<img width="903" height="507" alt="network prefix" src="https://github.com/user-attachments/assets/315f2871-e89c-421a-9bfd-fc9212f91b4c" />
+
+This is the network prefix and you can also see the subnet ID of 40 being read successfully by my MacBook (highlighted in blue).
+
+<img width="899" height="505" alt="interface id " src="https://github.com/user-attachments/assets/7508fcf2-f81c-4cdd-8da2-03d0fd7250ae" />
+
+This is the interface ID that my MacBook randomly generates due to privacy features, that way my MAC address does not get exposed. 
+
+That is all for my IPv6 configuration lab!
+
